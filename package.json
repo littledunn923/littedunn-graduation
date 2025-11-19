@@ -1,12 +1,12 @@
 {
-  "name": "kim-dung-grad-invite",
+  "name": "littedunn-graduation",
   "private": true,
   "homepage": "https://littledunn923.github.io/littedunn-graduation",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
