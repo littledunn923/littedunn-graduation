@@ -98,7 +98,7 @@ const InviteScreen = ({
   useEffect(() => {
     document.documentElement.style.setProperty(
       "--url-bg",
-      "url('bg-desktop-invite.png')"
+      "url('./src/assets/bg-desktop-invite.png')"
     );
   }, []);
   return (
@@ -129,10 +129,14 @@ const InviteScreen = ({
           </p>
         </div>
         <div className="relative w-fit h-fit mb-15  mt-9">
-          <img className="absolute" src="degree.png" alt="degree" />
+          <img
+            className="absolute"
+            src="./src/assets/degree.png"
+            alt="degree"
+          />
           <img
             className="relative animate-[super-light-bounce_1s_infinite]"
-            src="avatar-run.png"
+            src="./src/assets/avatar-run.png"
             alt="avatar"
             width={703}
           />
@@ -172,7 +176,7 @@ const InviteScreen = ({
           )}
         </div>
         <img
-          src="cloud-thankyou.png"
+          src="./src/assets/cloud-thankyou.png"
           alt="cloud"
           className="absolute left-1/2 top-0 -translate-x-1/2 z-0"
         />
@@ -181,7 +185,7 @@ const InviteScreen = ({
             <div className="relative w-fit h-fit mb-15 mt-9 animate-fade animate-once animate-duration-[2000ms]">
               <img
                 className="relative"
-                src="avatar-thankyou.png"
+                src="./src/assets/avatar-thankyou.png"
                 alt="avatar"
                 width={532}
               />

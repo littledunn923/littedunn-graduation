@@ -9,7 +9,7 @@ const WelcomeScreen = ({
   useEffect(() => {
     document.documentElement.style.setProperty(
       "--url-bg",
-      "url('bg-desktop-welcome.png')"
+      "url('./src/assets/bg-desktop-welcome.png')"
     );
   }, []);
   return (
@@ -21,10 +21,14 @@ const WelcomeScreen = ({
         from littedunn
       </p>
       <div className="relative w-fit h-fit mb-40 mt-9">
-        <img className="absolute bottom-[-30%]" src="cloud.png" alt="cloud" />
+        <img
+          className="absolute bottom-[-30%]"
+          src="./src/assets/cloud.png"
+          alt="cloud"
+        />
         <img
           className="relative animate-[light-bounce_1s_infinite]"
-          src="avatar-welcome.png"
+          src="./src/assets/avatar-welcome.png"
           alt="avatar"
           width={583}
           height={371}
