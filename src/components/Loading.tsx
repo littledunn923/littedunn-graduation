@@ -1,5 +1,6 @@
 // Cloud Configuration
 
+import { useMemo } from "react";
 import SpinnerCat from "./SpinnerCat";
 
 // Simply change the number of clouds or their properties here
@@ -321,15 +322,16 @@ const CloudSVG = ({
 };
 
 const Loading = () => {
-  const clouds = generateClouds();
+  const clouds = useMemo(() => generateClouds(), []);
 
   // Generate dynamic CSS for animations
-  const generateAnimationCSS = () => {
-    let css = "";
+  const generateAnimationCSS = useMemo(
+    () => () => {
+      let css = "";
 
-    // Generate float animations for each cloud
-    clouds.forEach((cloud) => {
-      css += `
+      // Generate float animations for each cloud
+      clouds.forEach((cloud) => {
+        css += `
         @keyframes float${cloud.id} {
           0%, 100% {
             transform: translateX(0) translateY(0);
@@ -339,10 +341,10 @@ const Loading = () => {
           }
         }
       `;
-    });
+      });
 
-    // Drift animation
-    css += `
+      // Drift animation
+      css += `
       @keyframes drift {
         0% {
           transform: translateX(-100px);
@@ -353,27 +355,29 @@ const Loading = () => {
       }
     `;
 
-    // Base cloud animation
-    css += `
+      // Base cloud animation
+      css += `
       .cloud {
         animation: drift 10s linear infinite;
       }
     `;
 
-    // Individual cloud animations
-    clouds.forEach((cloud) => {
-      css += `
+      // Individual cloud animations
+      clouds.forEach((cloud) => {
+        css += `
         .cloud-${cloud.id} {
           animation: drift ${cloud.driftDuration}s linear infinite, float${
-        cloud.id
-      } ${cloud.floatDuration.toFixed(1)}s ease-in-out infinite;
+          cloud.id
+        } ${cloud.floatDuration.toFixed(1)}s ease-in-out infinite;
           animation-delay: ${cloud.delay}s;
         }
       `;
-    });
+      });
 
-    return css;
-  };
+      return css;
+    },
+    [clouds]
+  );
 
   return (
     <div

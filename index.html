@@ -4,10 +4,18 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/savege.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preload" as="image" href="/bg-desktop-welcome.png" />
+    <link rel="preload" as="image" href="/avatar-welcome.png" />
+    <link rel="preload" as="image" href="/bg-desktop-invite.png" />
+    <link rel="preload" as="image" href="/avatar-run.png" />
+    <link rel="preload" as="image" href="/avatar-thankyou.png" />
+    <link rel="preload" as="image" href="/cloud.png" />
+    <link rel="preload" as="image" href="/cloud-thankyou.png" />
+    <link rel="preload" as="image" href="/degree.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&family=Bonheur+Royale&family=Grenze:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Indie+Flower&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Aleo:wght@400;700&family=Bonheur+Royale&family=Grenze:wght@700&family=Indie+Flower&display=swap"
       rel="stylesheet"
     />
     <title>Littledunn Graduation Invitation</title>
@@ -15,7 +23,7 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
-    <audio id="musicplayer" autoplay muted loop>
+    <audio id="musicplayer" preload="none" loop>
       <source src="want-to-dance.mp3" type="audio/mp3" />
     </audio>
   </body>

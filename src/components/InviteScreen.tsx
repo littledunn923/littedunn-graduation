@@ -186,6 +186,7 @@ const InviteScreen = ({
                 src="avatar-thankyou.png"
                 alt="avatar"
                 width={300}
+                loading="lazy"
               />
             </div>
             <div className="text-center font-semibold text-2xl animate-fade animate-once animate-duration-[2000ms]">
