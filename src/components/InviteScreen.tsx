@@ -85,7 +85,7 @@ const InviteScreen = ({
   const thankYouText =
     "Trải qua 4 năm đại học, em/mình cảm thấy thật sự may mắn vì xung quanh luôn có những người bạn, những anh chị đã xuất hiện, giúp đỡ và đồng hành trong những cột mốc quan trọng nhất. Nhờ có mọi người, 4 năm đại học của em/mình trở nên rất vui vẻ, thật rực rỡ và đầy ắp những kỷ niệm mà chắc chắn sau này nhớ lại sẽ vẫn mỉm cười. Sự hiện diện của mọi người làm cho hành trình này ấm áp và ý nghĩa hơn rất nhiều.\nEm/Mình biết ơn lắm — và luôn trân trọng tất cả.";
 
-  const timeText = "10:30 - 12:30";
+  const timeText = "12:30 - 13:30";
   const dateText = "Thứ Bảy, 29/11/2025";
   const locationText = "Trường Đại học Kinh tế - Luật";
   const locationText2 = "669 QL1A, khu phố 6, Thủ Đức, Thành phố Hồ Chí Minh";
@@ -142,14 +142,14 @@ const InviteScreen = ({
             <p className="font-semibold text-base sm:text-2xl">{timeText}</p>
             <p className="text-sm sm:text-base font-medium">{dateText}</p>
           </div>
-          <div className="h-px w-full border-b-2 border-dashed border-[#8C3500] sm:hidden" />
+          {/* <div className="h-px w-full border-b-2 border-dashed border-[#8C3500] sm:hidden" /> */}
           <div className="space-y-1 text-center py-2 sm:py-0 animate-fade animate-once animate-duration-[2000ms]">
             <p className="font-semibold text-base sm:text-2xl">
               {locationText}
             </p>
             <p className="text-sm sm:text-base font-medium">{locationText2}</p>
           </div>
-          <div className="h-px w-full border-b-2 border-dashed border-[#8C3500] sm:hidden" />
+          {/* <div className="h-px w-full border-b-2 border-dashed border-[#8C3500] sm:hidden" /> */}
           <div className="space-y-1 text-center py-2 sm:py-0 animate-fade animate-once animate-duration-[2000ms]">
             <p className="font-semibold text-base sm:text-2xl">{phoneText}</p>
             <p className="text-sm sm:text-base font-medium">{messageText}</p>
