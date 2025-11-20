@@ -14,10 +14,10 @@ const WelcomeScreen = ({
   }, []);
   return (
     <div className="h-full flex flex-col items-center justify-center text-center">
-      <h1 className="text-6xl sm:text-7xl md:text-8xl font-black text-[#8C3500] grenze-bold tracking-widest sm:leading-[96px] leading-[72px] animate-fade animate-once animate-duration-[2000ms]">
+      <h1 className="text-5xl sm:text-6xl md:text-7xl font-black text-[#8C3500] grenze-bold tracking-widest sm:leading-[96px] leading-[72px] animate-fade animate-once animate-duration-[2000ms]">
         YOU GET AN INVITATION
       </h1>
-      <p className="text-white text-5xl sm:text-6xl mt-3 indie-flower-regular drop-shadow-lg drop-shadow-[#F6CA92]">
+      <p className="text-white text-4xl sm:text-5xl mt-2 indie-flower-regular drop-shadow-lg drop-shadow-[#F6CA92]">
         from littledunn
       </p>
       <div className="relative w-fit h-fit mb-20 mt-9">
