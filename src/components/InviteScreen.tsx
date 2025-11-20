@@ -109,11 +109,11 @@ const InviteScreen = ({
       >
         <ArrowBigLeft className="size-6" fill="#8C3500" />
       </button>
-      <div className="relative min-h-full w-full flex flex-col items-center justify-center px-[5%] sm:px-[10%] snap-start">
+      <div className="relative min-h-full w-full flex flex-col items-center justify-center px-[4%] sm:px-[10%] snap-start">
         <h1 className="text-5xl sm:text-6xl md:text-7xl font-black grenze-bold tracking-widest animate-fade animate-once animate-duration-[2000ms]">
           GRADUATION
         </h1>
-        <p className="text-white text-4xl sm:text-5xl mt-3 indie-flower-regular drop-shadow-lg drop-shadow-[#F6CA92]">
+        <p className="text-white text-4xl sm:text-5xl mt-2 indie-flower-regular drop-shadow-lg drop-shadow-[#F6CA92]">
           ceremony
         </p>
         <div className="text-sm sm:text-base md:text-2xl font-medium mt-0 sm:mt-4 text-center">
@@ -128,7 +128,7 @@ const InviteScreen = ({
             nghiệp
           </p>
         </div>
-        <div className="relative w-fit h-fit mb-6 mt-4">
+        <div className="relative w-fit h-fit mb-4 mt-4">
           <img className="absolute" src="degree.png" alt="degree" />
           <img
             className="relative animate-[super-light-bounce_1s_infinite]"
@@ -138,19 +138,19 @@ const InviteScreen = ({
           />
         </div>
         <div className="flex flex-col sm:flex-row justify-between items-center w-full gap-1 sm:gap-2">
-          <div className="space-y-3 text-center py-2 sm:py-0 animate-fade animate-once animate-duration-[2000ms]">
+          <div className="space-y-1 text-center py-2 sm:py-0 animate-fade animate-once animate-duration-[2000ms]">
             <p className="font-semibold text-base sm:text-2xl">{timeText}</p>
             <p className="text-sm sm:text-base font-medium">{dateText}</p>
           </div>
           <div className="h-px w-full border-b-2 border-dashed border-[#8C3500] sm:hidden" />
-          <div className="space-y-3 text-center py-2 sm:py-0 animate-fade animate-once animate-duration-[2000ms]">
+          <div className="space-y-1 text-center py-2 sm:py-0 animate-fade animate-once animate-duration-[2000ms]">
             <p className="font-semibold text-base sm:text-2xl">
               {locationText}
             </p>
             <p className="text-sm sm:text-base font-medium">{locationText2}</p>
           </div>
           <div className="h-px w-full border-b-2 border-dashed border-[#8C3500] sm:hidden" />
-          <div className="space-y-3 text-center py-2 sm:py-0 animate-fade animate-once animate-duration-[2000ms]">
+          <div className="space-y-1 text-center py-2 sm:py-0 animate-fade animate-once animate-duration-[2000ms]">
             <p className="font-semibold text-base sm:text-2xl">{phoneText}</p>
             <p className="text-sm sm:text-base font-medium">{messageText}</p>
           </div>
@@ -161,12 +161,12 @@ const InviteScreen = ({
       </div>
 
       <div className="relative min-h-full w-full flex flex-col items-center justify-center snap-start text-center px-[5%] sm:px-[10%]">
-        <h1 className="text-6xl sm:text-7xl md:text-8xl font-black grenze-bold tracking-widest z-10 animate-fade animate-once animate-duration-[2000ms]">
+        <h1 className="text-5xl sm:text-6xl md:text-7xl font-black grenze-bold tracking-widest z-10 animate-fade animate-once animate-duration-[2000ms]">
           LỜI CẢM ƠN
         </h1>
         <div
           ref={thankYouTextRef}
-          className="text-sm sm:text-base md:text-2xl font-medium text-center mt-6 leading-[36px] sm:leading-[48px] z-10 whitespace-pre-line"
+          className="text-sm sm:text-base md:text-2xl font-medium text-center mt-6 leading-[28px] sm:leading-[48px] z-10 whitespace-pre-line"
         >
           {displayedThankYouText}
           {isTypingThankYou && (
@@ -180,7 +180,7 @@ const InviteScreen = ({
         />
         {!isTypingThankYou && (
           <>
-            <div className="relative w-fit h-fit mb-6 mt-4 animate-fade animate-once animate-duration-[2000ms]">
+            <div className="relative w-fit h-fit mb-4 mt-4 animate-fade animate-once animate-duration-[2000ms]">
               <img
                 className="relative"
                 src="avatar-thankyou.png"

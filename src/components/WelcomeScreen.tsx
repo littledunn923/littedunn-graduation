@@ -20,7 +20,7 @@ const WelcomeScreen = ({
       <p className="text-white text-5xl sm:text-6xl mt-3 indie-flower-regular drop-shadow-lg drop-shadow-[#F6CA92]">
         from littledunn
       </p>
-      <div className="relative w-fit h-fit mb-40 mt-9">
+      <div className="relative w-fit h-fit mb-20 mt-9">
         <img className="absolute bottom-[-30%]" src="cloud.png" alt="cloud" />
         <img
           className="relative animate-[light-bounce_1s_infinite]"
@@ -31,7 +31,7 @@ const WelcomeScreen = ({
       </div>
       <button
         onClick={() => setScreen("invite")}
-        className="flex items-center justify-center bg-[#8C3500] hover:bg-[#6A2A00] cursor-pointer text-white px-6 h-[46px] sm:h-[62px] rounded-xl gap-2 text-base sm:text-2xl font-medium"
+        className="flex items-center justify-center bg-[#8C3500] hover:bg-[#6A2A00] cursor-pointer text-white px-6 h-[46px] md:h-[62px] rounded-xl gap-2 text-base md:text-2xl font-medium"
       >
         <Mail className="size-6" />
         <p className="mt-0.25">Mở Xem Lun!!!</p>

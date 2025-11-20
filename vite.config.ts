@@ -7,6 +7,7 @@ export default defineConfig({
   plugins: [react(), tailwindcss()],
   base: "/littledunn-graduation/",
   server: {
+    host: "0.0.0.0",
     port: 4000,
   },
   build: {
