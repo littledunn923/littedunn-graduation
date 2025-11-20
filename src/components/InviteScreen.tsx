@@ -113,7 +113,7 @@ const InviteScreen = ({
         <h1 className="text-5xl sm:text-6xl md:text-7xl font-black grenze-bold tracking-widest animate-fade animate-once animate-duration-[2000ms]">
           GRADUATION
         </h1>
-        <p className="text-white text-4xl sm:text-5xl mt-2 indie-flower-regular drop-shadow-lg drop-shadow-[#F6CA92]">
+        <p className="text-white text-4xl sm:text-5xl mt-1 indie-flower-regular drop-shadow-lg drop-shadow-[#F6CA92]">
           ceremony
         </p>
         <div className="text-sm sm:text-base md:text-2xl font-medium mt-0 sm:mt-4 text-center">
@@ -137,20 +137,20 @@ const InviteScreen = ({
             width={450}
           />
         </div>
-        <div className="flex flex-col sm:flex-row justify-between items-center w-full gap-1 sm:gap-2">
-          <div className="space-y-1 text-center py-2 sm:py-0 animate-fade animate-once animate-duration-[2000ms]">
+        <div className="flex flex-col sm:flex-row justify-between items-center w-full gap-0 sm:gap-2">
+          <div className="space-y-1 text-center py-1 sm:py-0 animate-fade animate-once animate-duration-[2000ms]">
             <p className="font-semibold text-base sm:text-2xl">{timeText}</p>
             <p className="text-sm sm:text-base font-medium">{dateText}</p>
           </div>
           {/* <div className="h-px w-full border-b-2 border-dashed border-[#8C3500] sm:hidden" /> */}
-          <div className="space-y-1 text-center py-2 sm:py-0 animate-fade animate-once animate-duration-[2000ms]">
+          <div className="space-y-1 text-center py-1 sm:py-0 animate-fade animate-once animate-duration-[2000ms]">
             <p className="font-semibold text-base sm:text-2xl">
               {locationText}
             </p>
             <p className="text-sm sm:text-base font-medium">{locationText2}</p>
           </div>
           {/* <div className="h-px w-full border-b-2 border-dashed border-[#8C3500] sm:hidden" /> */}
-          <div className="space-y-1 text-center py-2 sm:py-0 animate-fade animate-once animate-duration-[2000ms]">
+          <div className="space-y-1 text-center py-1 sm:py-0 animate-fade animate-once animate-duration-[2000ms]">
             <p className="font-semibold text-base sm:text-2xl">{phoneText}</p>
             <p className="text-sm sm:text-base font-medium">{messageText}</p>
           </div>
@@ -189,7 +189,7 @@ const InviteScreen = ({
                 loading="lazy"
               />
             </div>
-            <div className="text-center font-semibold text-2xl animate-fade animate-once animate-duration-[2000ms]">
+            <div className="text-center font-semibold text-base sm:text-2xl animate-fade animate-once animate-duration-[2000ms]">
               Thanks a lot!!!
             </div>
           </>
