@@ -9,7 +9,6 @@ function App() {
   const [screen, setScreen] = useState("welcome");
   const [isLoading, setIsLoading] = useState(false);
   
-
   const handleScreenChange = (newScreen: string) => {
     setIsLoading(true);
     setTimeout(() => {
